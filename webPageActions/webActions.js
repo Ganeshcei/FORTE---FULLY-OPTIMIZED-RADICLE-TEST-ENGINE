@@ -35,10 +35,6 @@ class webActions
         await dropdown.selectOption(index);
     }
     
-    async pageRefresh()
-    {
-        await this.page.reload();
-    }
     
 
 }
