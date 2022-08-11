@@ -40,16 +40,6 @@ class webActions
         await this.page.reload();
     }
     
-    async pageBack()
-    {
-        await this.page.goBack()
-    }
-
-    async pageForward()
-    {
-        await this.page.goForward()
-    }
-   
 
 }
 
