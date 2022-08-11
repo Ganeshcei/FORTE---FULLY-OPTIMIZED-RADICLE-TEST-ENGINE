@@ -65,7 +65,6 @@ class webActions
         await this.page.locator(locator).uncheck()
     }
 
-
 }
 
 module.exports={webActions}
