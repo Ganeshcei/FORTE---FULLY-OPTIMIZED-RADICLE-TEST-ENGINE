@@ -50,20 +50,6 @@ class webActions
         await this.page.goForward()
     }
    
-    async checkBoxCheck(locator)
-    {
-        await this.page.locator(locator).check();
-    }
-
-    async checkBoxCheckIsChecked(locator)
-    {
-        await this.page.locator(locator).isChecked().toBeTruthy()
-    }
-
-    async checkBoxCheckUnChecked(locator)
-    {
-        await this.page.locator(locator).uncheck()
-    }
 
 }
 
