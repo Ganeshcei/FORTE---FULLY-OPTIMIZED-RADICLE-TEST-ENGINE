@@ -35,7 +35,36 @@ class webActions
         await dropdown.selectOption(index);
     }
     
+    async pageRefresh()
+    {
+        await this.page.reload();
+    }
     
+    async pageBack()
+    {
+        await this.page.goBack()
+    }
+
+    async pageForward()
+    {
+        await this.page.goForward()
+    }
+   
+    async checkBoxCheck(locator)
+    {
+        await this.page.locator(locator).check();
+    }
+
+    async checkBoxCheckIsChecked(locator)
+    {
+        await this.page.locator(locator).isChecked().toBeTruthy()
+    }
+
+    async checkBoxCheckUnChecked(locator)
+    {
+        await this.page.locator(locator).uncheck()
+    }
+
 
 }
 
